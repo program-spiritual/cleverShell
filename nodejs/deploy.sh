@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-
+# ======================= author:hongyun hu  =============
+# ======================= github:xiaomiwujiecao =============
 # 初始化环境  git nginx zsh
 initWithGitNginxZsh(){
   # update apt-get
