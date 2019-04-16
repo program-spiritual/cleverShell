@@ -14,5 +14,5 @@ shell 脚本明智编程
 > 测试调用
 
 ```bash
-curl -o- https://github.com/xiaomiwujiecao/KongFuOfArchitect/blob/master/nodejs/deploy.sh | bash
+curl -o- https://github.com/xiaomiwujiecao/cleverShellProgramming/blob/master/nodejs/deploy.sh | bash
 ```
