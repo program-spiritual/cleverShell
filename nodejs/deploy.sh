@@ -13,25 +13,14 @@ installOhMyZsh(){
   # install oh-my-zsh
   sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
   echo '
-  # 生产环境
   export NODE_ENV="production"
-  # zsh 本地字符集
   export LC_ALL=C
   ' >> ~/.zshrc
-  source ~/.zshrc
 }
 # 安装 NVM NodeJS 版本管理工具
 installNvm(){
   # 安装 nvm
   curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh | bash
-  echo '
-   # NVM 配置
-   export NVM_DIR="/root/.nvm"
-   [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-   export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node
-   ' >> ~/.zshrc
-   # 引用
-  source ~/.zshrc
 }
 ## 初始化NODEJS环境
 installNodejsEnv(){
@@ -46,7 +35,7 @@ installNodejsEnv(){
 initSsh(){
   # 配置 ssh
 ssh-keygen -t rsa -b 4096 -C "node-`date`@example.com"
-eval "$(ssh-agent -s)"
+eval "$( ssh-agent  -s )"
 ssh-add ~/.ssh/id_rsa
 }
 
@@ -65,7 +54,7 @@ installMongo(){
   cd /data/mongodb
   wget http://fastdl.mongodb.org/linux/mongodb-linux-x86_64-3.4.7.tgz
   tar -xzf mongodb-linux-x86_64-3.4.7.tgz
-  cd /data/mongodbtest/config
+  cd /data/mongodb/config
   #  配置 mongodb 文件
   echo '
   dbpath=/data/mongodb/data   #数据存放目录
@@ -77,7 +66,7 @@ installMongo(){
   ' > mongod.conf
   # 写入环境变量
   echo '
-    export PATH=$PATH:/data/mongodb/mongodb-linux-x86_64-3.4.7/bin
+  export PATH=$PATH:/data/mongodb/mongodb-linux-x86_64-3.4.7/bin
   ' >> ~/.zshrc
   # 引用
   source ~/.zshrc
