@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
-# ======================= author:hongyun hu  =============
-# ======================= github:xiaomiwujiecao =============
+echo # =====author:hongyun hu  =========================
+echo # =====github:xiaomiwujiecao ======================
+echo # =====nodejs + pm2 + mongodb + zsh + nginx + git==
+echo # =====ssh config ssh login config  ===============
 # 初始化环境  git nginx zsh
 initWithGitNginxZsh(){
   # update apt-get
