@@ -1,6 +1,6 @@
-# cleverShellProgramming
+# cleverShell
 
-shell 脚本明智编程
+shell 脚本编程
 
 ![](./img/shell脚本明智编程.png)
 ## 目录
