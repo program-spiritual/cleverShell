@@ -4,7 +4,7 @@ in_path(){
 # 找给定的命令 找到 返回 0
 # 没找到 返回 1
 # 函数执行完成后 恢复
-#IFS是internal field separator的缩写，shell的特殊环境变量。ksh根据IFS存储的值，可以是空格、tab、换行符或者其他自定义符号，来解析输入和输出的变量值。
+#IFS是internal field separator 的缩写，shell的特殊环境变量。ksh根据IFS存储的值，可以是空格、tab、换行符或者其他自定义符号，来解析输入和输出的变量值。
 # 具体请查看  http://xstarcd.github.io/wiki/shell/IFS.html
   cmd=$1  ourpath=$2 result=1
   oldIFS=$IFS   IFS=":"

@@ -13,8 +13,8 @@ NAME[2]="Mahnaz"
 NAME[3]="Ayan"
 NAME[4]="Daisy"
 
-echo "First Index: ${NAME[0]}"
-echo "Second Index: ${NAME[1]}"
+echo "First Index: ${NAME[ 0 ]}"
+echo "Second Index: ${NAME[ 1 ]}"
 # 访问数组中的所有项目
-echo "First Method: ${NAME[*]}"
-echo "Second Method: ${NAME[@]}"
+echo "First Method: ${NAME[ * ]}"
+echo "Second Method: ${NAME[ @ ]}"
