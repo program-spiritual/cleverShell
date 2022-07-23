@@ -1,6 +1,6 @@
 ```shell
 #!/usr/bin/env bash
-echo # =====author:hongyun hu  =========================
+echo # =====author:xiaomiwujiecao  =========================
 echo # =====github:xiaomiwujiecao ======================
 echo # =====nodejs + pm2 + mongodb + zsh + nginx + git==
 echo # =====ssh config ssh login config  ===============
